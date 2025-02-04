@@ -11,12 +11,19 @@
     <body>
 
         <div class="content-box">
-            Hallo
+            <h1>Web-NFC</h1>
+            <p>
+                <button onclick="readTag()">Test NFC Read</button>
+                <button onclick="writeTag()">Test NFC Write</button>
+            </p>
+            <pre id="log"></pre>
+            <p><small>Based on the code snippets from <a href="https://w3c.github.io/web-nfc/#examples">specification draft</a>.</small></p>
         </div>
         
         
         <script src="assets/read-nfc.js" async defer></script>
         <script src="assets/write-nfc.js" async defer></script>
         <script src="assets/web-components.js" async defer></script>
+        <script src="assets/log.js" async defer></script>
     </body>
 </html>
