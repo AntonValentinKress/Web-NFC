@@ -1,0 +1,1 @@
+//alert("Read-NFC ist geladen!")
