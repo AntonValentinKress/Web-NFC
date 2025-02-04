@@ -4,6 +4,7 @@ async function readTag() {
     if ("NDEFReader" in window) {
       const ndef = new NDEFReader();
       try {
+        singleconsoleLog("Warte auf NFC...")
         await ndef.scan();
         ndef.onreading = event => {
           const decoder = new TextDecoder();
@@ -17,6 +18,6 @@ async function readTag() {
         consoleLog(error);
       }
     } else {
-      consoleLog("Web NFC is not supported.");
+      singleconsoleLog("Web NFC is not supported.");
     }
   }

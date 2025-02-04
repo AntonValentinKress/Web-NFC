@@ -3,21 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Web-NFC &ndash; Notizen</title>
+        <title>Web-NFC &ndash; PoC</title>
         <meta name="description" content="NFC read/write using Android/Chrome">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/stylesheet.css">
     </head>
     <body>
-
-        <div class="content-box">
-            <h1>Web-NFC</h1>
-            <p>
-                <button onclick="readTag()">Test NFC Read</button>
-                <button onclick="writeTag()">Test NFC Write</button>
-            </p>
-            <pre id="log"></pre>
-            <p><small>Based on the code snippets from <a href="https://w3c.github.io/web-nfc/#examples">specification draft</a>.</small></p>
+        <div class="margin-box">
+            <div class="content-box">
+                <h1>Web-NFC</h1>
+                <pre id="log"></pre>
+                <p class="button-grid">
+                    <button onclick="readTag()" class="read">Lesen</button>
+                    <button onclick="writeTag()" class="write">Schreiben</button>
+                </p>
+                <p class="credits"><small>Basierend auf folgendem <a href="https://w3c.github.io/web-nfc/#examples">Spezifikationsentwurf</a>.</small></p>
+            </div>
         </div>
         
         
