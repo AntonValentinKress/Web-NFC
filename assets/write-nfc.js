@@ -1,14 +1,17 @@
 //alert("Write-NFC ist geladen!")
 
-async function writeTag() {
+async function writeTagText() {
     if ("NDEFReader" in window) {
       const ndef = new NDEFReader();
       try {
-        singleconsoleLog("Warte auf NFC...")
+        var inputText = document.getElementById('inputText').value;
+
+
+        singleconsoleLog("Warte auf NFC...\n")
 
         await ndef.write("What Web Can Do Today");
 
-        consoleLog("NDEF message written!");
+        consoleLog("\nNFC beschrieben!");
 
       } catch(error) {
         consoleLog(error);

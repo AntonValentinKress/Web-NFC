@@ -11,12 +11,14 @@
     <body>
         <div class="margin-box">
             <div class="content-box">
-                <h1>Web-NFC</h1>
-                <pre id="log" class="log"></pre>
-                <p class="button-grid">
-                    <button onclick="readTag()" class="read">Lesen</button>
-                    <button onclick="loadPage('write.html')" class="write">Schreiben</button>
+                <h1 onclick="loadPage('index.html')">Web-NFC</h1>
+                <p class="writeFunctionsGrid">
+                    <button onclick="loadPage('write-text.html')" class="write">Text</button>
+                    <button onclick="writeTag()" class="write">URI</button>
+                    <button onclick="writeTag()" class="write">Smart poster</button>
+                    <button onclick="writeTag()" class="write">Signature</button>
                 </p>
+                <p class="info"><strong>Bitte wähle die gewünschte Funktion aus!</strong></p>
                 <p class="credits"><small>Basierend auf folgendem <a href="https://w3c.github.io/web-nfc/#examples">Spezifikationsentwurf</a>.</small></p>
             </div>
         </div>
@@ -24,7 +26,7 @@
         
         <script src="assets/read-nfc.js" async defer></script>
         <script src="assets/write-nfc.js" async defer></script>
-        <script src="assets/log.js" async defer></script>
         <script src="assets/functions.js" async defer></script>
+        <script src="assets/log.js" async defer></script>
     </body>
 </html>

@@ -4,7 +4,7 @@ async function readTag() {
     if ("NDEFReader" in window) {
       const ndef = new NDEFReader();
       try {
-        singleconsoleLog("Warte auf NFC...")
+        singleconsoleLog("Warte auf NFC...\n")
         await ndef.scan();
         ndef.onreading = event => {
           const decoder = new TextDecoder();
