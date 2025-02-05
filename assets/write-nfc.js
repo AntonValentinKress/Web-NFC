@@ -9,7 +9,7 @@ async function writeTagText() {
 
         singleconsoleLog("Warte auf NFC...\n")
 
-        await ndef.write("What Web Can Do Today");
+        await ndef.write(inputText);
 
         consoleLog("\nNFC beschrieben!");
 
